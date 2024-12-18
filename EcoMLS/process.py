@@ -2,7 +2,6 @@ import csv
 import io
 from PIL import Image
 import time
-import torch
 import psutil
 import pandas as pd
 import imghdr
