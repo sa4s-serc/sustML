@@ -15,7 +15,7 @@ class MyUser(HttpUser):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
-        # file containing dat of time interval between 2 consecutive request's
+        # file containing data of time interval between 2 consecutive requests
         filename = 'resampled_scaled_inter_arrivals.csv'
         # it is a scaled version of FIFA98 scenario
         with open(filename, 'r') as f:
@@ -24,7 +24,7 @@ class MyUser(HttpUser):
 
         self.n = 0
 
-        IMAGES_FOLDER = 'IMAGES'  # Folder with Image's
+        IMAGES_FOLDER = 'IMAGES'
 
         for filename in os.listdir(IMAGES_FOLDER):
             if filename.endswith('.jpg') or filename.endswith('.jpeg') or filename.endswith('.png'):
